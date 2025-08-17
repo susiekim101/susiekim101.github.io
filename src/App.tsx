@@ -1,15 +1,18 @@
 import './App.css'
 import NavBar from "./components/NavBar";
-import About from "./components/About";
+import Home from "./components/Home";
+
+
+//import About from "./components/About";
 
 // npm install -D tailwindcss@3
 // npm install motion
-
+// npm install typewriter-effect
 function App() {
   return (
     <div className="font-mono">
     <NavBar/>
-    <About/>
+    <Home/>
     </div>
   )
 }
