@@ -7,3 +7,24 @@ button:hover{
     transform: translateY(-1px);
 }
 
+.marquee {
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-track {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee var(--marquee-duration, 20s) linear infinite;
+}
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}

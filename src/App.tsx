@@ -1,18 +1,20 @@
 import './App.css'
-import NavBar from "./components/NavBar";
-import Home from "./components/Home";
-
-
-//import About from "./components/About";
+import NavBar from "./components/sections/NavBar";
+import Home from "./components/sections/Home";
+import About from "./components/sections/About";
+import MouseEffect from "./components/sections/MouseEffect";
 
 // npm install -D tailwindcss@3
 // npm install motion
 // npm install typewriter-effect
+// npm install shadcn@latest add card
 function App() {
   return (
     <div className="font-mono">
-    <NavBar/>
-    <Home/>
+      <MouseEffect/>
+      <NavBar/>
+      <Home/>
+      <About/>
     </div>
   )
 }
