@@ -3,6 +3,7 @@ import NavBar from "./components/sections/NavBar";
 import Home from "./components/sections/Home";
 import About from "./components/sections/About";
 import MouseEffect from "./components/sections/MouseEffect";
+import Projects from "./components/sections/Projects";
 
 // npm install -D tailwindcss@3
 // npm install motion
@@ -15,6 +16,7 @@ function App() {
       <NavBar/>
       <Home/>
       <About/>
+      <Projects/>
     </div>
   )
 }

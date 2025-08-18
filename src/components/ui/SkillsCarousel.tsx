@@ -16,7 +16,7 @@ const SkillsCarousel = ( {skills, durationSec = 20}: SkillsCarouselProps ) => {
                 {items.map((skill, idx) => (
                     <span
                         key={idx}
-                        className="bg-slate-600 text-white px-3 py-1 rounded-md text-sm whitespace-nowrap"
+                        className="bg-white/15 text-white px-3 py-1 rounded-md text-sm whitespace-nowrap"
                     >
                         {skill}
                     </span>

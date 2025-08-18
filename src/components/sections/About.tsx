@@ -2,12 +2,13 @@ import { Laptop } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SkillsCarousel from "../ui/SkillsCarousel";
+import skills from "../../assets/skills.json";
 
 const About = () => {
 
     return (
         <section id="about">
-            <div className="w-screen h-screen flex flex-col justify-center gap-10 p-10 border border-solid border-white">
+            <div className="w-screen min-h-screen h-auto flex flex-col justify-center gap-10 p-10">
                 
                 <motion.div
                     initial={{opacity: 0, y: 12}}
@@ -27,21 +28,7 @@ const About = () => {
                     </p>
 
                     <div className="my-5">
-                        <SkillsCarousel 
-                            skills={[
-                                "C++",
-                                "JavaScript",
-                                "HTML",
-                                "Python",
-                                "SwiftUI",
-                                "CSS",
-                                "Java",
-                                "TypeScript",
-                                "React",
-                                "Next.js",
-
-                            ]}
-                        />
+                        <SkillsCarousel skills={skills}/>
                     </div>
                 </motion.div>
                 

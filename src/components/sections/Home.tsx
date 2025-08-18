@@ -19,7 +19,7 @@ const Home = () => {
         <section
             id="home"
             ref={homeRef}
-            className="relative flex flex-col items-center justify-center h-[95vh] w-screen border border-white border-solid"
+            className="relative flex flex-col items-center justify-center h-[95vh] w-screen"
         >
             <motion.div
                 style={{scale: scaleBg}}
