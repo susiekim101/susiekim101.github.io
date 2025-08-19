@@ -7,6 +7,12 @@ export interface Project {
 
 const PROJECTS: Project[] = [
     {
+        title: "BruinBites",
+        description:  "Mobile application to let students rate and review university dining halls. Motivated by my personal urge to try as many menus as possible as an undergraduate student!",
+        tags: ["SwiftUI", "Python", "BeautifulSoup", "Firebase"],
+        link: "https://github.com/susiekim101/BruinBites"
+    },
+    {
         title: "POSCO Reinforcement Learning",
         description: "A reinforcement learning simulation using Isaac Lab that defines the markov decision process problem for construction work for POSCO (South Korean steel manufacturer).",
         tags: ["Python", "Isaac Lab", "Isaac Sim", "PyTorch"],

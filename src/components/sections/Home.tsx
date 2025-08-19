@@ -1,5 +1,4 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { title } from "motion/react-client";
 import { useRef} from "react";
 import Typewriter from "typewriter-effect";
 import { ChevronDown } from 'lucide-react';
