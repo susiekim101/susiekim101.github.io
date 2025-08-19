@@ -16,7 +16,7 @@ const NavBar = () => {
                 {[
                     { href: "#about", label: "ABOUT"},
                     { href: "#projects", label: "PROJECTS"},
-                    { href: "#contact", label: "CONTACT"},
+                    { href: "#experiences", label: "EXPERIENCES"},
                 ].map((item) => (
                     <a
                         key={item.href}
