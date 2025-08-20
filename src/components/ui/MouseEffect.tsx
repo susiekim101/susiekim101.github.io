@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const MouseEffect = () => {
     // const [pos, setPos] = useState({x: 0, y: 0});
 
