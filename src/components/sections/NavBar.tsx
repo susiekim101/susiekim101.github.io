@@ -42,7 +42,7 @@ const NavBar = () => {
                 </a>
             </div>
 
-            { /* MOBILE VIEW  
+            { /* MOBILE VIEW */} 
             <button
                 className="sm:hidden p-2"
                 onClick={() => setOpen(!open)}
@@ -50,16 +50,16 @@ const NavBar = () => {
             >
                 <Menu className="h-6 w-6 text-yellow-400"/>
             </button>
-            */}
+            
         </nav>
 
-        { /* MOBILE VIEW */ }
+        { /* MOBILE VIEW
         {open && (
             <div className="sm:hidden absolute w-full bg-slate-900/50 border border-white/50">
                 <h1>Hello</h1>
 
             </div>
-        )}
+        )} */ }
         </header>
     );
 }
