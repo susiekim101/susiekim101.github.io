@@ -1,5 +1,5 @@
 import { Laptop } from "lucide-react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SkillsCarousel from "../ui/SkillsCarousel";
 import skills from "../../assets/skills.json";
