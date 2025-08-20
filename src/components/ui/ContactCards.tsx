@@ -1,3 +1,6 @@
+import githubIcon from "../../../public/github.svg";
+import linkedinIcon from "../../../public/linkedin.svg";
+
 const ContactCards = () => {
     return (
         <>
@@ -9,7 +12,7 @@ const ContactCards = () => {
                 rel="noreferrer"
 
             >
-                <img src="../../../public/github.svg" className="w-5 h-5"/>
+                <img src={githubIcon} className="w-5 h-5"/>
                 <span>GitHub</span>
             </a>
 
@@ -21,7 +24,7 @@ const ContactCards = () => {
                 rel="noreferrer"
 
             >
-                <img src="../../../public/linkedin.svg" className="w-5 h-5"/>
+                <img src={linkedinIcon} className="w-5 h-5"/>
                 <span>LinkedIn</span>
             </a>
         </>
