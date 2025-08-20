@@ -18,7 +18,7 @@ const Home = () => {
         <section
             id="home"
             ref={homeRef}
-            className="relative flex flex-col items-center justify-center h-[95vh] w-full"
+            className="border relative flex flex-col items-center justify-center h-[95vh] w-full"
         >
             <motion.div
                 className="absolute inset-0 -z-10 bg-slate-900"
@@ -27,9 +27,9 @@ const Home = () => {
             <div className="text-center">
                 <motion.h1
                     style={{opacity: titleOpacity}}
-                    className="text-6xl"    
+                    className="text-2xl sm:text-6xl"    
                 >
-                    <div className="m-5">
+                    <div className="my-2 sm:my-5">
                         <span className="text-neutral-300">
                             Hi, I&apos;m{" "}
                         </span>
@@ -41,7 +41,7 @@ const Home = () => {
                         </span>
                     </div>
 
-                    <span className="text-yellow-500 font-bold">
+                    <span className="text-yellow-500 font-bold ">
                         <Typewriter
                             options={{
                                 strings: [
@@ -57,7 +57,7 @@ const Home = () => {
                         />
                     </span>
                     
-                    <div className="flex w-full justify-center items-center text-base text-neutral-400 m-5">
+                    <div className="border flex w-full justify-center items-center text-sm sm:text-base text-neutral-400 my-5">
                         <h1 className="w-[75%] text-center">Undergraduate student at UCLA studying computer science with a passion for building impactful and innovative software</h1>
                     </div>
 

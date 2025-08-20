@@ -28,7 +28,7 @@ const ExperienceItem = ( {item}: ExperienceItemProp ) => {
                         <span className="italic">{item.organization}</span>
                 </div>
 
-                <div className="w-full ml-6">
+                <div className="w-full ml-6 border">
                     <span className="text-sm">
                         {item.description}
                     </span>
