@@ -13,13 +13,13 @@ const ExperienceScroller = () => {
         <div className="relative mt-10">
             <motion.div
                 style={{scaleY}}
-                className="absolute left-3 top-3 bottom-3 w-[2px] origin-top bg-gradient-to-b from-yellow-400/60 to-yellow-500/10"
+                className="hidden sm:inline-flex absolute left-3 top-3 bottom-3 w-[2px] origin-top bg-gradient-to-b from-yellow-400/60 to-yellow-500/10"
                 aria-hidden
             />
 
             <ul
                 ref={ref}
-                className="relative ml-15 py-5 w-auto h-[60vh] sm:h-[70vh] overflow-y-auto space-y-6 border border-white/20 rounded-2xl bg-white/5 backdrop-blur-sm "
+                className="relative sm:ml-15 py-5 w-auto h-[60vh] sm:h-[70vh] overflow-y-auto space-y-6 border border-white/20 rounded-2xl bg-white/5 backdrop-blur-sm "
             >
                 {EXPERIENCES.map((item, idx) => (
                     <ExperienceItem key={idx} item={item}/>

@@ -26,7 +26,7 @@ const NavBar = () => {
                     <a
                         key={item.href}
                         href={item.href}
-                        className="hidden text-sm px-3 py-1.5 rounded-xl tracking-widset text-neutral-300 hover:text-white hover:bg-white/5 transition-colors">
+                        className="hidden sm:inline-flex text-sm px-3 py-1.5 rounded-xl tracking-widset text-neutral-300 hover:text-white hover:bg-white/5 transition-colors">
                             {item.label}
                     </a>
                 ))}
