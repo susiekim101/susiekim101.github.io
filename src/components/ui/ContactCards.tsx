@@ -5,7 +5,7 @@ const ContactCards = () => {
     return (
         <>
             <a href="https://github.com/susiekim101"
-                className="flex items-center hidden text-lg sm:inline-flex gap-2 px-2 py-1 rounded-xl
+                className="flex items-center text-lg sm:inline-flex gap-2 px-2 py-1 rounded-xl
                             bg-gray-200/30 text-white hover:text-white hover:bg-gray-200/40
                             border border-gray-200/50 transition-colors"
                 target="_blank"
@@ -17,7 +17,7 @@ const ContactCards = () => {
             </a>
 
             <a href="https://www.linkedin.com/in/susiekim101/"
-                className="flex items-center hidden text-lg sm:inline-flex ml-5 gap-2 px-2 py-1 rounded-xl
+                className="flex items-center text-lg sm:inline-flex ml-5 gap-2 px-2 py-1 rounded-xl
                             bg-gray-200/30 text-white hover:text-white hover:bg-gray-200/40
                             border border-gray-200/50 transition-colors"
                 target="_blank"
