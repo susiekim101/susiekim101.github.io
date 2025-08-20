@@ -22,7 +22,7 @@ const Contact = () => {
                     </p>
                     
                     <h2 className="flex justify-center items-center text-base sm:text-2xl font-semibold">
-                        <Mail className="w-10 h-10 text-yellow-500 m-5"/>
+                        <Mail className="w-10 h-10 text-yellow-500 my-5 mr-3"/>
                         susiekim101@ucla.edu
                     </h2>
 
