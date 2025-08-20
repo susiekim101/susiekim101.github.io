@@ -1,11 +1,11 @@
 import { ChartLine } from "lucide-react";
 import { motion } from "framer-motion";
-
+import ExperienceScroller from "../ui/ExperienceScroller";
 const Experiences = () => {
 
     return (
         <section id="experiences">
-            <div className="w-screen min-h-screen h-auto flex flex-col justify-center items-center gap-10 p-10 border border-white border-solid">
+            <div className="w-screen min-h-screen h-auto p-10">
                 <motion.div
                     initial={{opacity: 0, y: 12}}
                     whileInView={{opacity: 1, y: 0}}
@@ -17,6 +17,9 @@ const Experiences = () => {
                         experiences
                     </h2> 
                 </motion.div>
+
+                <ExperienceScroller/>
+
             </div>
         </section>
     );
