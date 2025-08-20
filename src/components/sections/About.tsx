@@ -8,7 +8,7 @@ const About = () => {
 
     return (
         <section id="about">
-            <div className="w-screen min-h-screen h-auto flex flex-col justify-center gap-10 p-10">
+            <div className="w-full min-h-screen h-auto flex flex-col justify-center gap-10 p-10">
                 
                 <motion.div
                     initial={{opacity: 0, y: 12}}

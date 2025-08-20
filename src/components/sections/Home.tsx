@@ -11,17 +11,16 @@ const Home = () => {
         offset: ["start start", "end start"]
     });
 
-    const scaleBg = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
+    // const scaleBg = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
     const titleOpacity = useTransform(scrollYProgress, [0, 0.6], [1, 0.6]);
 
     return (
         <section
             id="home"
             ref={homeRef}
-            className="relative flex flex-col items-center justify-center h-[95vh] w-screen"
+            className="relative flex flex-col items-center justify-center h-[95vh] w-full"
         >
             <motion.div
-                style={{scale: scaleBg}}
                 className="absolute inset-0 -z-10 bg-slate-900"
             />
 
@@ -46,7 +45,7 @@ const Home = () => {
                                 strings: [
                                     "software engineer",
                                     "full-stack developer",
-                                    "women in engineering",
+                                    "woman in engineering",
                                     "ambitious student"
                                 ],
                                 delay: 75,

@@ -19,7 +19,7 @@ const ExperienceScroller = () => {
 
             <ul
                 ref={ref}
-                className="relative ml-8 h-[60vh] sm:h-[70vh] overflow-y-auto space-y-6 border border-white/20 rounded-2xl bg-white/5 backdrop-blur-sm "
+                className="relative ml-15 w-auto h-[60vh] sm:h-[70vh] overflow-y-auto space-y-6 border border-white/20 rounded-2xl bg-white/5 backdrop-blur-sm "
             >
                 {EXPERIENCES.map((item, idx) => (
                     <ExperienceItem key={idx} item={item}/>

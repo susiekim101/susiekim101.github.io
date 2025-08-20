@@ -8,7 +8,7 @@ const Projects = () => {
 
     return (
         <section id="projects">
-            <div className="w-screen min-h-screen h-auto p-10">
+            <div className="w-full min-h-screen h-auto p-10">
                 <motion.div
                     initial={{opacity: 0, y: 12}}
                     whileInView={{opacity: 1, y: 0}}
@@ -32,7 +32,7 @@ const Projects = () => {
                                 initial={{opacity: 0, y: 12}}
                                 whileInView={{opacity: 1, y: 0}}
                                 viewport={{once: true, margin: "-60px"}}
-                                transition={{duration: 0.5, delay: i * 0.6}}
+                                transition={{duration: 0.3, delay: i * 0.3}}
                                 className="group"
                             >
                                 <Card className="h-full w-full bg-white/7 border-white/30 hover:border-yellow-300/50 hover:bg-white/5 transition-colors rounded-2xl shadow-sm">

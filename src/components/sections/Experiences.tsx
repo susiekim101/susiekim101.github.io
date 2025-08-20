@@ -5,7 +5,7 @@ const Experiences = () => {
 
     return (
         <section id="experiences">
-            <div className="w-screen min-h-screen h-auto p-10">
+            <div className="w-full min-h-screen h-auto p-10">
                 <motion.div
                     initial={{opacity: 0, y: 12}}
                     whileInView={{opacity: 1, y: 0}}

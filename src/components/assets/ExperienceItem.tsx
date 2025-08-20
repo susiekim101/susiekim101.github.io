@@ -8,34 +8,40 @@ type ExperienceItemProp = {
 
 const ExperienceItem = ( {item}: ExperienceItemProp ) => {
     return (
-        <motion.li
+        <motion.div
             initial={{opacity: 0, y: 12}}
             whileInView={{opacity: 1, y: 0}}
-            viewport={{once: true, margin: "-75px"}}
+            viewport={{once: true, margin: "-50px"}}
             transition={{duration: 0.5}}
-            className="flex flex-col py-3 px-5 gap-4"
+            className="flex py-3 px-5 gap-4 w-full"
         >
-            <div className="flex justify-between items-center">
+            <div className="basis-[20%] text-sm shrink-0">
+                <span className="text-white/70">{item.dates}</span>
+            </div>
+
+            <div className="pr-5">
                 <div className="flex gap-3 items-center">
-                    <Sparkle
-                        className="h-3 w-3"
-                    />
-                    <h3 className="font-semibold">{item.title}, </h3>
-                    <span className="italic">{item.organization}</span>
+                        <Sparkle
+                            className="h-3 w-3"
+                        />
+                        <h3 className="font-semibold">{item.title}, </h3>
+                        <span className="italic">{item.organization}</span>
                 </div>
-                
-                <div>
-                    <span className="text-white/70">{item.dates}</span>
+
+                <div className="w-full ml-6">
+                    <span className="text-sm">
+                        {item.description}
+                    </span>
                 </div>
             </div>
 
-            <ul className="list-disc pl-10 text-sm">
-                {item.description.map( (bullet, idx) => (
-                    <li key={idx}>{bullet}</li>
-                ))}
-            </ul>
-        </motion.li>
+        </motion.div>
     )
 }
-
+/*
+                <ul className="list-disc pl-10 text-sm">
+                    {item.description.map( (bullet, idx) => (
+                        <li key={idx}>{bullet}</li>
+                    ))}
+                </ul>*/
 export default ExperienceItem;

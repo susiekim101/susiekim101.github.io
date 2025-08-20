@@ -2,7 +2,7 @@ export interface Experience {
     title: string,
     organization: string,
     dates: string,
-    description: string[]
+    description: string
 }
 
 const EXPERIENCES: Experience[] = [
@@ -10,33 +10,39 @@ const EXPERIENCES: Experience[] = [
         title: "Logistics Chair",
         organization: "Society of Women Engineers",
         dates: "Oct. 2024 - Present",
-        description: [
-            "Lead logistics for SWE’s largest student-run networking event, connecting 200+ students and 20+ companies with 10% of attendees advancing to next-round interviews through recruiter engagement",
-            "Collaborate with company recruiters and industry professionals to coordinate participation and hiring initiatives",
-            "Oversee committee budget for external workshops, resume reviews, and mock interviews for 90+ students",
-            "Work with team of 7 to manage site visits at PPG Industries and AWS workshops with Amazon"
-        ]
+        description: `Lead logistics for SWE’s largest student-run networking event, 
+        connecting 200+ students and 20+ companies with 10% of attendees 
+        advancing to next-round interviews through recruiter engagement. 
+        Oversee committee budget for external workshops, resume reviews, 
+        and mock interviews for 90+ students, collaboarting with companies
+        like PPG Industries and Amazon.`
     },
     {
         title: "Full Stack Developer",
         organization: "Association for Computing Machinery",
         dates: "Nov. 2024 - Present",
-        description: [
-            "Design and maintain an open source web application serving 500+ users across 9 committees leveraging Next.js, Node.js, and React to deliver timely, relevant information to members",
-            "Migrated 1,000+ lines of JavaScript to TypeScript, reducing runtime errors by 20%",
-            "Communicate with 15-member team to establish standardized practices across the open-source codebase"
-        ]
+        description: `Design and maintain an open source web application serving 500+ users 
+        across 9 committees leveraging Next.js, Node.js, and React to deliver timely, relevant 
+        information to members. Responsible for migrating 1,000+ lines of Javascript to Typescript,
+        reducing runtime errors by 20%`
+    },
+    {
+        title: "Research Assistant",
+        organization: "Reinforcement Learning and Robot Learning Lab",
+        dates: "June 2025 - Aug. 2025",
+        description: `Designed a robotic simulation in Python using Isaac Lab to solve a markov decision 
+        process with a proximal policy optimization algorithm for construction tasks at POSCO, reducing 
+        site-related dangers for workers. Present and led discussions on academic papers with 10+ graduate 
+        students covering humanoid locomotion, teacher-state policy learning, and multi-objective reward 
+        optimization in RL systems`
     },
     {
         title: "Data Analyst",
         organization: "DataRes at UCLA",
         dates: "Jan 2025 - Mar 2025",
-        description: [
-            "Analyzed data on the world’s top 200 universities using Pandas, NumPy, and Matplotlib to uncover factors affecting prestige",
-            "Solved for key drivers of university rankings using linear regression (R = –0.95), finding research output to be a crucial factor",
-            "Created visualizations, including bar graphs and trend lines, aggregating ranks in intervals of 5 for readability",
-            "https://ucladatares.medium.com/beyond-the-ivy-what-actually-makes-a-college-prestigious-2dfdbd6f90a4"
-        ]
+        description: `Analyzed data on the world’s top 200 universities using Pandas, NumPy, and 
+        Matplotlib to uncover factors affecting prestige. Solved for key drivers of university 
+        rankings using linear regression (R = –0.95), finding research output to be a crucial factor`
     }
 ]
 
