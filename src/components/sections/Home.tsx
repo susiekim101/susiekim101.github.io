@@ -18,7 +18,7 @@ const Home = () => {
         <section
             id="home"
             ref={homeRef}
-            className="border relative flex flex-col items-center justify-center h-[95vh] w-full"
+            className="relative flex flex-col items-center justify-center h-[95vh] w-full"
         >
             <motion.div
                 className="absolute inset-0 -z-10 bg-slate-900"
@@ -57,7 +57,7 @@ const Home = () => {
                         />
                     </span>
                     
-                    <div className="border flex w-full justify-center items-center text-sm sm:text-base text-neutral-400 my-5">
+                    <div className="flex w-full justify-center items-center text-sm sm:text-base text-neutral-400 my-5">
                         <h1 className="w-[75%] text-center">Undergraduate student at UCLA studying computer science with a passion for building impactful and innovative software</h1>
                     </div>
 
@@ -77,7 +77,7 @@ const Home = () => {
             </div>
 
             <a href="#about" className="absolute bottom-10">
-                    <ChevronDown className="h-10 w-10"/> 
+                    <ChevronDown className="w-7 h-7 sm:h-10 sm:w-10"/> 
             </a>
 
         </section>
