@@ -8,7 +8,7 @@ const NavBar = () => {
             <div>
                 <a href="#home" className="group inline-flex gap-2 items-center">
                     <CodeXml className="h-5 w-5 text-yellow-400 group-hover:rotate-6 transition-transform"/>
-                    <span className="text-sm tracking-wider">susie.dev</span>
+                    <span className="text-sm tracking-wider">susiekim.dev</span>
                 </a>
             </div>
 
