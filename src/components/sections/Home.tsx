@@ -46,6 +46,8 @@ const Home = () => {
                                 strings: [
                                     "software engineer",
                                     "full-stack developer",
+                                    "women in engineering",
+                                    "ambitious student"
                                 ],
                                 delay: 75,
                                 autoStart: true,
