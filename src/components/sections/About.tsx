@@ -21,10 +21,15 @@ const About = () => {
                         about me
                     </h2>
                     <p>
-                        Undergraduate student at UCLA studying computer science with a passion for building impactful and innovative software. 
-                        I love to create, see my ideas come to life, and watch people interact with the things I've built. I'm interested 
-                        in exploring the intersection of AI and robotics, and how we can use intelligent systems to simplify everyday tasks, 
-                        enhance human capability, and provide meaningful service in real-world environments.
+                        Hi 👋! I'm Susie Kim, a rising second-year computer science student passionate about motivating change through technology.
+                        I love seeing my ideas come to life and watching people interact with the things I build. Programming and designing user-centered
+                        applications has become both a hobby and a long-term goal I'm eager to scale to larger audiences.
+                        When I'm not brainstorming or executing new projects, I thrive in team settings where I can voice ideas and engage in thoughtful
+                        discussions. Whether leading a technical team for a nonprofit to implement new backend features or suggesting improvements for UCLA's
+                        Evening with Industry, I find energy in collaboration and shared problem-solving.
+                        I'm also excited about exploring the intersection of AI and robotics, and how intelligent systems can simplify daily tasks, enhance
+                        human capability, and provide meaningful service in real-world environments. I'm enthusiastic and motivated to contribute to the future
+                        of robot learning.
                     </p>
 
                     <div className="my-5">
