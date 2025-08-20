@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef} from "react";
 import Typewriter from "typewriter-effect";
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Mail } from 'lucide-react';
 
 
 const Home = () => {
@@ -27,17 +27,19 @@ const Home = () => {
             <div className="text-center">
                 <motion.h1
                     style={{opacity: titleOpacity}}
-                    className="text-[4vw]"    
+                    className="text-6xl"    
                 >
-                    <span className="text-neutral-300">
-                        Hi, I&apos;m{" "}
-                    </span>
-                    <span className="font-bold">
-                        Susie Kim{" "}
-                    </span>
-                    <span className="text-neutral-300">
-                        and I am a
-                    </span>
+                    <div className="m-5">
+                        <span className="text-neutral-300">
+                            Hi, I&apos;m{" "}
+                        </span>
+                        <span className="font-bold">
+                            Susie Kim{" "}
+                        </span>
+                        <span className="text-neutral-300">
+                            and I am a
+                        </span>
+                    </div>
 
                     <span className="text-yellow-500 font-bold">
                         <Typewriter
@@ -54,10 +56,37 @@ const Home = () => {
                             }}
                         />
                     </span>
+                    
+                    <div className="flex w-full justify-center items-center text-base text-neutral-400 m-5">
+                        <h1 className="w-[75%] text-center">Undergraduate student at UCLA studying computer science with a passion for building impactful and innovative software</h1>
+                    </div>
+
+                    <div className="flex justify-center items-center gap-5">
+                        <a href="#contact"
+                            className="flex items-center hidden text-lg sm:inline-flex gap-2 px-2 py-1 rounded-xl
+                                        bg-gray-200/30 text-white hover:text-white hover:bg-gray-200/40
+                                        border border-gray-200/50 transition-colors"
+                        >
+                            <Mail className="w-5 h-5"/>
+                            <span>Contact me</span>
+                        </a>
+
+                        <a href="https://github.com/susiekim101"
+                            className="flex items-center hidden text-lg sm:inline-flex gap-2 px-2 py-1 rounded-xl
+                                        bg-gray-200/30 text-white hover:text-white hover:bg-gray-200/40
+                                        border border-gray-200/50 transition-colors"
+                            target="_blank"
+                            rel="noreferrer"
+
+                        >
+                            <img src="../../../public/github.svg" className="w-5 h-5"/>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
                 </motion.h1>
             </div>
 
-            <a href="#about" className="absolute bottom-20">
+            <a href="#about" className="absolute bottom-10">
                     <ChevronDown className="h-10 w-10"/> 
             </a>
 
