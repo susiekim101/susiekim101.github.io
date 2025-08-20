@@ -5,6 +5,7 @@ import About from "./components/sections/About";
 import MouseEffect from "./components/ui/MouseEffect";
 import Projects from "./components/sections/Projects";
 import Experiences from './components/sections/Experiences';
+import Contact from './components/sections/Contact';
 
 // npm install -D tailwindcss@3
 // npm install motion
@@ -19,6 +20,7 @@ function App() {
       <About/>
       <Projects/>
       <Experiences/>
+      <Contact/>
     </div>
   )
 }

@@ -1,8 +1,8 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef} from "react";
 import Typewriter from "typewriter-effect";
-import { ChevronDown, Mail } from 'lucide-react';
-
+import { ChevronDown, User } from 'lucide-react';
+import ContactCards from "../ui/ContactCards";
 
 const Home = () => {
     const homeRef = useRef(null);
@@ -61,27 +61,17 @@ const Home = () => {
                         <h1 className="w-[75%] text-center">Undergraduate student at UCLA studying computer science with a passion for building impactful and innovative software</h1>
                     </div>
 
-                    <div className="flex justify-center items-center gap-5">
+                    <div className="flex justify-center items-center">
                         <a href="#contact"
-                            className="flex items-center hidden text-lg sm:inline-flex gap-2 px-2 py-1 rounded-xl
+                            className="flex items-center hidden text-lg sm:inline-flex gap-2 px-2 py-1 mr-5 rounded-xl
                                         bg-gray-200/30 text-white hover:text-white hover:bg-gray-200/40
                                         border border-gray-200/50 transition-colors"
                         >
-                            <Mail className="w-5 h-5"/>
+                            <User className="w-5 h-5"/>
                             <span>Contact me</span>
                         </a>
 
-                        <a href="https://github.com/susiekim101"
-                            className="flex items-center hidden text-lg sm:inline-flex gap-2 px-2 py-1 rounded-xl
-                                        bg-gray-200/30 text-white hover:text-white hover:bg-gray-200/40
-                                        border border-gray-200/50 transition-colors"
-                            target="_blank"
-                            rel="noreferrer"
-
-                        >
-                            <img src="../../../public/github.svg" className="w-5 h-5"/>
-                            <span>GitHub</span>
-                        </a>
+                        <ContactCards/>
                     </div>
                 </motion.h1>
             </div>

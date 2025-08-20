@@ -7,6 +7,15 @@ export interface Experience {
 
 const EXPERIENCES: Experience[] = [
     {
+        title: "Software Developer Intern",
+        organization: "Tori in the House",
+        dates: "May 2025 - Present",
+        description: `Develop a full-stack web platform for Tori in the House using React, 
+        Node.js, Firebase, and Gemini to assess interior design preferences, accessibility needs, 
+        and emotional triggers for trauma-informed housing. Drive product ideation by initiating 
+        brainstorming sessions, aligning technical feasibility with business goals.`,
+    },
+    {
         title: "Logistics Chair",
         organization: "Society of Women Engineers",
         dates: "Oct. 2024 - Present",
