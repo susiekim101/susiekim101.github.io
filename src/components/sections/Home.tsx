@@ -21,7 +21,7 @@ const Home = () => {
             className="relative flex flex-col items-center justify-center h-[95vh] w-full"
         >
             <motion.div
-                className="absolute inset-0 -z-10 bg-slate-900"
+                className="absolute inset-0"
             />
 
             <div className="text-center">

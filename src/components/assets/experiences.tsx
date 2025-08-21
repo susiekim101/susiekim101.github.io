@@ -16,6 +16,15 @@ const EXPERIENCES: Experience[] = [
         brainstorming sessions, aligning technical feasibility with business goals.`,
     },
     {
+        title: "Full Stack Developer",
+        organization: "Association for Computing Machinery",
+        dates: "Nov. 2024 - Present",
+        description: `Design and maintain an open source web application serving 500+ users 
+        across 9 committees leveraging Next.js, Node.js, and React to deliver timely, relevant 
+        information to members. Responsible for migrating 1,000+ lines of Javascript to Typescript,
+        reducing runtime errors by 20%.`
+    },
+    {
         title: "Logistics Chair",
         organization: "Society of Women Engineers",
         dates: "Oct. 2024 - Present",
@@ -27,15 +36,6 @@ const EXPERIENCES: Experience[] = [
         like PPG Industries and Amazon.`
     },
     {
-        title: "Full Stack Developer",
-        organization: "Association for Computing Machinery",
-        dates: "Nov. 2024 - Present",
-        description: `Design and maintain an open source web application serving 500+ users 
-        across 9 committees leveraging Next.js, Node.js, and React to deliver timely, relevant 
-        information to members. Responsible for migrating 1,000+ lines of Javascript to Typescript,
-        reducing runtime errors by 20%`
-    },
-    {
         title: "Research Assistant",
         organization: "Reinforcement Learning and Robot Learning Lab",
         dates: "June 2025 - Aug. 2025",
@@ -43,7 +43,7 @@ const EXPERIENCES: Experience[] = [
         process with a proximal policy optimization algorithm for construction tasks at POSCO, reducing 
         site-related dangers for workers. Present and led discussions on academic papers with 10+ graduate 
         students covering humanoid locomotion, teacher-state policy learning, and multi-objective reward 
-        optimization in RL systems`
+        optimization in RL systems.`
     },
     {
         title: "Data Analyst",
@@ -51,7 +51,7 @@ const EXPERIENCES: Experience[] = [
         dates: "Jan 2025 - Mar 2025",
         description: `Analyzed data on the world’s top 200 universities using Pandas, NumPy, and 
         Matplotlib to uncover factors affecting prestige. Solved for key drivers of university 
-        rankings using linear regression (R = –0.95), finding research output to be a crucial factor`
+        rankings using linear regression (R = –0.95), finding research output to be a crucial factor.`
     }
 ]
 

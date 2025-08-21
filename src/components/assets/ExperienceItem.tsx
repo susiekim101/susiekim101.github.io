@@ -20,7 +20,7 @@ const ExperienceItem = ( {item}: ExperienceItemProp ) => {
             </div>
 
             <div className="pr-5">
-                <div className="flex gap-3 items-center">
+                <div className="flex gap-3 items-center sm:text-base text-sm">
                         <Sparkle
                             className="hidden sm:inline-flex h-3 w-3"
                         />
@@ -29,7 +29,7 @@ const ExperienceItem = ( {item}: ExperienceItemProp ) => {
                 </div>
 
                 <div className="w-full ml-6 mt-3">
-                    <span className="text-sm">
+                    <span className="text-xs sm:text-sm">
                         {item.description}
                     </span>
                 </div>

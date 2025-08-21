@@ -11,7 +11,7 @@ const NavBar = () => {
     // const [open, setOpen] = useState(false);
 
     return (
-        <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-slate-900/70 border-b border-white/10">
+        <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-slate-900/40 border-b border-white/10">
         <nav className="px-1 sm:px-6 lg:px-8 h-14 flex items-center justify-between"> 
             <div>
                 <a href="#home" className="group inline-flex gap-2 items-center">
