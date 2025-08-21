@@ -7,6 +7,16 @@ export interface Experience {
 
 const EXPERIENCES: Experience[] = [
     {
+        title: "Research Assistant",
+        organization: "Reinforcement Learning and Robot Learning Lab",
+        dates: "June 2025 - Aug. 2025",
+        description: `Designed a robotic simulation in Python using Isaac Lab to solve a markov decision 
+        process with a proximal policy optimization algorithm for construction tasks at POSCO, reducing 
+        site-related dangers for workers. Present and led discussions on academic papers with 10+ graduate 
+        students covering humanoid locomotion, teacher-state policy learning, and multi-objective reward 
+        optimization in RL systems.`
+    },
+    {
         title: "Software Developer Intern",
         organization: "Tori in the House",
         dates: "May 2025 - Present",
@@ -34,16 +44,6 @@ const EXPERIENCES: Experience[] = [
         Oversee committee budget for external workshops, resume reviews, 
         and mock interviews for 90+ students, collaboarting with companies
         like PPG Industries and Amazon.`
-    },
-    {
-        title: "Research Assistant",
-        organization: "Reinforcement Learning and Robot Learning Lab",
-        dates: "June 2025 - Aug. 2025",
-        description: `Designed a robotic simulation in Python using Isaac Lab to solve a markov decision 
-        process with a proximal policy optimization algorithm for construction tasks at POSCO, reducing 
-        site-related dangers for workers. Present and led discussions on academic papers with 10+ graduate 
-        students covering humanoid locomotion, teacher-state policy learning, and multi-objective reward 
-        optimization in RL systems.`
     },
     {
         title: "Data Analyst",
