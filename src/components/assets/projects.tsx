@@ -42,7 +42,7 @@ const PROJECTS: Project[] = [
         title: "TimeLeaf",
         description: "Personal discovery quiz to help users discover new passions and hobbies. Includes a progress tracker to record daily activity logs",
         tags: ["Hackathon", "HTML", "CSS", "Gemini", "Javascript", "Next.js", "Node.js", "MongoDB"],
-        link: "https://github.com/susiekim101/la-hacks-25"
+        link: "https://github.com/katieyungchung/athenahacks25"
     }
 ]
 
