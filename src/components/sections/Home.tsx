@@ -34,11 +34,11 @@ const Home = () => {
                         <span className="text-neutral-300">
                             Hi, I&apos;m{" "}
                         </span>
-                        <span className="font-bold">
-                            Susie Kim{" "}
+                        <span className="font-bold bg-gradient-to-br from-blue-100 to-indigo-400 bg-clip-text text-transparent">
+                            Susie Kim
                         </span>
                         <span className="text-neutral-300">
-                            and I am a
+                            {" "} and I am a
                         </span>
                     </div>
 
