@@ -3,14 +3,14 @@ interface SkillsCarouselProps {
     durationSec?: number;
 }
 
-const SkillsCarousel = ( {skills, durationSec = 20}: SkillsCarouselProps ) => {
+const SkillsCarousel = ( {skills, durationSec = 90}: SkillsCarouselProps ) => {
     const items = [...skills, ...skills];
 
     return (
         <div className="marquee border border-slate-500 rounded-md py-3">
             <div
                 className="marquee-track px-3"
-                style={{ ['--marquee0dureation' as any]: `${durationSec}s`}}
+                style={{ ['--marquee-duration' as any]: `${durationSec}s`}}
                 aria-hidden="true"
             >
                 {items.map((skill, idx) => (

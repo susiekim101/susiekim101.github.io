@@ -51,7 +51,8 @@ const About = () => {
                         </CardHeader>
                         <CardContent className="text-m text-neutral-300 leading-7">
                             <ul className="list-disc pl-5 space-y-2">
-                                <li>planning and organizing for Society of Women Engineers's Evening with Industry 2026!</li>
+                                <li>planning and organizing for Society of Women Engineers's Evening with Industry 2026</li>
+                                <li>working on personal projects and studying DSA</li>
                                 <li>enjoying summer break :{")"}</li>
                             </ul>
                         </CardContent>
