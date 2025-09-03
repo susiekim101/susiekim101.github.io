@@ -42,7 +42,7 @@ const PROJECTS: Project[] = [
         link: "https://github.com/susiekim101/posco-mdp",
         media: {
             type: "video",
-            src: "../../../public/posco-demo.mov",
+            src: "/public/posco-demo.mov",
             caption: "Demonstration of brick simulation using Isaac Sim"
         },
         longDescription: [
@@ -65,7 +65,7 @@ const PROJECTS: Project[] = [
         link: "https://github.com/susiekim101/",
         media: {
             type: "video",
-            src: "../../../public/stile-demo.mov",
+            src: "/public/stile-demo.mov",
             caption: "Initial ideation for Tori in the House at a hackathon. Currently working on new iteration of this original project."
         }
     },
@@ -80,7 +80,7 @@ const PROJECTS: Project[] = [
         ],
         media: {
             type: "video",
-            src: "../../../public/clouds2campus-demo.mp4",
+            src: "/public/clouds2campus-demo.mp4",
             caption: "Demo video of Clouds2Campus, including log in/sign up features and file upload with AI extraction"
         }
     },
