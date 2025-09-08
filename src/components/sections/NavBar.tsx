@@ -31,7 +31,7 @@ const NavBar = () => {
                     </a>
                 ))}
 
-                <a href="/Susie_Kim_Resume.pdf"
+                <a href="/Susie_Kim.pdf"
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center ml gap-1.5 px-2 py-1 rounded-xl
