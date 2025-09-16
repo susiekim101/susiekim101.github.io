@@ -42,7 +42,7 @@ const PROJECTS: Project[] = [
         link: "https://github.com/susiekim101/posco-mdp",
         media: {
             type: "video",
-            src: "/public/posco-demo.mov",
+            src: "/posco-demo.mov",
             caption: "Demonstration of brick simulation using Isaac Sim"
         },
         longDescription: [
@@ -65,7 +65,7 @@ const PROJECTS: Project[] = [
         link: "https://github.com/susiekim101/",
         media: {
             type: "video",
-            src: "/public/stile-demo.mov",
+            src: "/stile-demo.mov",
             caption: "Initial ideation for Tori in the House at a hackathon. Currently working on new iteration of this original project."
         }
     },
@@ -80,17 +80,16 @@ const PROJECTS: Project[] = [
         ],
         media: {
             type: "video",
-            src: "/public/clouds2campus-demo.mp4",
+            src: "/clouds2campus-demo.mp4",
             caption: "Demo video of Clouds2Campus, including log in/sign up features and file upload with AI extraction"
         }
     },
-/*
     {
         title: "TimeLeaf",
         description: "Personal discovery quiz to help users discover new passions and hobbies. Includes a progress tracker to record daily activity logs.",
         tags: ["Hackathon", "HTML", "CSS", "Gemini", "Javascript", "Next.js", "Node.js", "MongoDB"],
         link: "https://github.com/katieyungchung/athenahacks25"
-    }*/
+    }
 ]
 
 export default PROJECTS;
