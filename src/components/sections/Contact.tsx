@@ -23,12 +23,15 @@ const Contact = () => {
                     
                     <h2 className="flex justify-center items-center text-base sm:text-2xl font-semibold">
                         <Mail className="w-10 h-10 text-yellow-500 my-5 mr-3"/>
-                        susiekim101@ucla.edu
+                        kim.susie06@gmail.com
                     </h2>
 
+                    <p>
+                        Currently in the process of transitioning from previous email, susiekim101@ucla.edu. Please forward all prospective emails to the new email adress listed above.
+                    </p>
                     <div className="flex justify-center items-center my-5">
                         <a
-                            href="mailto:susiekim101@ucla.edu"
+                            href="mailto:kim.susie06@gmail.com"
                             rel="noreferrer"
                             target="_blank"
                             className="flex items-center hidden text-lg sm:inline-flex mr-5 gap-2 px-2 py-1 rounded-xl

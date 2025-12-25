@@ -3,8 +3,33 @@ import { motion } from "framer-motion";
 import PROJECTS, { type Project } from "../assets/projects";
 import { Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
 import Tags from "../assets/Tags";
+import { useState, useEffect, useCallback } from "react";
+import ProjectsModal from '../ui/ProjectsModal';
 
 const Projects = () => {
+    const [selected, setSelected] = useState<Project | null>(null);
+
+    useEffect(() => {
+        const onKey = (e: KeyboardEvent) => {
+            if(e.key == "Escape") {
+                setSelected(null);
+            }
+        }
+        if (selected) {
+            window.addEventListener("keydown", onKey);
+        }
+        return () => window.removeEventListener("keydown", onKey);
+    }, [selected]);
+
+    const openModal = useCallback((p: Project) => {
+        console.log("openModal clicked");
+        setSelected(p);
+    }, []);
+
+    const closeModal = useCallback(() => {
+        console.log("closeModal clicked");
+        setSelected(null);
+    }, []);
 
     return (
         <section id="projects">
@@ -20,14 +45,14 @@ const Projects = () => {
                         projects
                     </h2>
                 </motion.div>
-                
+
                 <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-7">
                     {
-                        PROJECTS.map( (project: Project, i) => (
-                            <motion.a
+                        PROJECTS.slice(0, 6).map( (project: Project, i) => (
+                            <motion.button
                                 key={project.title}
-                                href={project.link}
-                                target={project.link?.startsWith("http") ? "_blank" : undefined}
+                                type="button"
+                                onClick={() => openModal(project)}
                                 rel="noreferrer"
                                 initial={{opacity: 0, y: 12}}
                                 whileInView={{opacity: 1, y: 0}}
@@ -35,11 +60,19 @@ const Projects = () => {
                                 transition={{duration: 0.3, delay: i * 0.3}}
                                 className="group"
                             >
-                                <Card className="h-full w-full bg-white/7 border-white/30 hover:border-yellow-300/50 hover:bg-white/5 transition-colors rounded-2xl shadow-sm">
+                                <Card className="h-full w-full bg-white/7 border-white/30 hover:border-yellow-300/50 hover:bg-white/5 transition-colors rounded-2xl shadow-sm  text-left">
                                     <CardHeader>
                                         <CardTitle className="flex w-full min-w-0 text-lg items-center justify-between gap-3">
                                             <span className="truncate flex-1 min-w-0">{project.title}</span>
-                                            <ExternalLink className="shrink-0 h-4 w-4 opacity-0 group-hover:opacity-100 hover:text-yellow-300 transition-opacity"/>
+                                            <a
+                                                onClick={(e) => e.stopPropagation()}
+                                                href={project.link}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                <ExternalLink className="shrink-0 h-4 w-4 opacity-0 group-hover:opacity-100 hover:text-yellow-300 transition-opacity"/>
+                                            </a>
+                                            
                                         </CardTitle>
                                     </CardHeader>
 
@@ -50,7 +83,7 @@ const Projects = () => {
                                         ))}</div>
                                     </CardContent>
                                 </Card>
-                            </motion.a>
+                            </motion.button>
                         ))
                     }
                 </div>
@@ -61,9 +94,8 @@ const Projects = () => {
                     viewport={{once: true, margin: "-15px"}}
                     transition={{duration: 0.6}}
                     className="flex gap-2 border border-white/50 hover:border-yellow-300/50 text-sm px-3 py-1.5 rounded-xl tracking-widset text-neutral-300 hover:text-white bg-white/5 hover:bg-white/10 transition-colors"
-                    href="https://github.com/susiekim101"
+                    href="/all-projects"
                     rel="noreferrer"
-                    target="_blank"
                 >
                     <span>
                         View More
@@ -72,6 +104,7 @@ const Projects = () => {
                 </motion.a>
                 </div>
             </div>
+            { selected && <ProjectsModal project={selected} onClose={closeModal}/> }
         </section>
     );
 }

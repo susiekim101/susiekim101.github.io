@@ -38,10 +38,5 @@ const ExperienceItem = ( {item}: ExperienceItemProp ) => {
         </motion.div>
     )
 }
-/*
-                <ul className="list-disc pl-10 text-sm">
-                    {item.description.map( (bullet, idx) => (
-                        <li key={idx}>{bullet}</li>
-                    ))}
-                </ul>*/
+
 export default ExperienceItem;

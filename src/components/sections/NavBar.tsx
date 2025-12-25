@@ -2,19 +2,18 @@ import { CodeXml, File } from "lucide-react";
 // import { useState } from "react";
 
 const NAV_ITEMS = [
-    { href: "#about", label: "ABOUT"},
-    { href: "#projects", label: "PROJECTS"},
-    { href: "#experiences", label: "EXPERIENCES"}
+    { href: "/#about", label: "ABOUT"},
+    { href: "/#projects", label: "PROJECTS"},
+    { href: "/#experiences", label: "EXPERIENCES"}
 ]
 
 const NavBar = () => {
-    // const [open, setOpen] = useState(false);
 
     return (
         <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-slate-900/40 border-b border-white/10">
         <nav className="px-1 sm:px-6 lg:px-8 h-14 flex items-center justify-between"> 
             <div>
-                <a href="#home" className="group inline-flex gap-2 items-center">
+                <a href="/" className="group inline-flex gap-2 items-center">
                     <CodeXml className="h-5 w-5 text-yellow-400 group-hover:rotate-6 transition-transform"/>
                     <span className="text-sm tracking-wider">susiekim.dev</span>
                 </a>
@@ -31,7 +30,7 @@ const NavBar = () => {
                     </a>
                 ))}
 
-                <a href="/Susie_Kim_Resume.pdf"
+                <a href="/Susie_Kim.pdf"
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center ml gap-1.5 px-2 py-1 rounded-xl
