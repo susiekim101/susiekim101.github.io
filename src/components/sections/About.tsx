@@ -42,8 +42,8 @@ const About = () => {
                         <CardContent className="text-md text-neutral-300 leading-7">
                             <ul className="list-disc pl-5 space-y-2">
                                 <li>planning and organizing for Society of Women Engineers's Evening with Industry 2026</li>
-                                <li>working on personal projects and studying DSA</li>
-                                <li>enjoying summer break :{")"}</li>
+                                <li>working on building dev blog and improving on dsa</li>
+                                <li>learning so much about software construction!</li>
                             </ul>
                         </CardContent>
                     </Card>
