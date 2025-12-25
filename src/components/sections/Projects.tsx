@@ -5,8 +5,33 @@ import { Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
 import Tags from "../assets/Tags";
 import { useState, useEffect, useCallback } from "react";
 import ProjectsModal from '../ui/ProjectsModal';
+import { useState, useEffect, useCallback } from "react";
+import ProjectsModal from '../ui/ProjectsModal';
 
 const Projects = () => {
+    const [selected, setSelected] = useState<Project | null>(null);
+
+    useEffect(() => {
+        const onKey = (e: KeyboardEvent) => {
+            if(e.key == "Escape") {
+                setSelected(null);
+            }
+        }
+        if (selected) {
+            window.addEventListener("keydown", onKey);
+        }
+        return () => window.removeEventListener("keydown", onKey);
+    }, [selected]);
+
+    const openModal = useCallback((p: Project) => {
+        console.log("openModal clicked");
+        setSelected(p);
+    }, []);
+
+    const closeModal = useCallback(() => {
+        console.log("closeModal clicked");
+        setSelected(null);
+    }, []);
     const [selected, setSelected] = useState<Project | null>(null);
 
     useEffect(() => {
@@ -53,6 +78,8 @@ const Projects = () => {
                                 key={project.title}
                                 type="button"
                                 onClick={() => openModal(project)}
+                                type="button"
+                                onClick={() => openModal(project)}
                                 rel="noreferrer"
                                 initial={{opacity: 0, y: 12}}
                                 whileInView={{opacity: 1, y: 0}}
@@ -61,9 +88,19 @@ const Projects = () => {
                                 className="group"
                             >
                                 <Card className="h-full w-full bg-white/7 border-white/30 hover:border-yellow-300/50 hover:bg-white/5 transition-colors rounded-2xl shadow-sm  text-left">
+                                <Card className="h-full w-full bg-white/7 border-white/30 hover:border-yellow-300/50 hover:bg-white/5 transition-colors rounded-2xl shadow-sm  text-left">
                                     <CardHeader>
                                         <CardTitle className="flex w-full min-w-0 text-lg items-center justify-between gap-3">
                                             <span className="truncate flex-1 min-w-0">{project.title}</span>
+                                            <a
+                                                onClick={(e) => e.stopPropagation()}
+                                                href={project.link}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                <ExternalLink className="shrink-0 h-4 w-4 opacity-0 group-hover:opacity-100 hover:text-yellow-300 transition-opacity"/>
+                                            </a>
+                                            
                                             <a
                                                 onClick={(e) => e.stopPropagation()}
                                                 href={project.link}
@@ -83,6 +120,7 @@ const Projects = () => {
                                         ))}</div>
                                     </CardContent>
                                 </Card>
+                            </motion.button>
                             </motion.button>
                         ))
                     }
@@ -104,6 +142,7 @@ const Projects = () => {
                 </motion.a>
                 </div>
             </div>
+            { selected && <ProjectsModal project={selected} onClose={closeModal}/> }
             { selected && <ProjectsModal project={selected} onClose={closeModal}/> }
         </section>
     );
