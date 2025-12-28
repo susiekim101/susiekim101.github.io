@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
 import Tags from "../assets/Tags";
 import { useState, useEffect, useCallback } from "react";
 import ProjectsModal from '../ui/ProjectsModal';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
     const [selected, setSelected] = useState<Project | null>(null);
@@ -97,20 +98,16 @@ const Projects = () => {
                     }
                 </div>
                 <div className="flex justify-center items-center mt-10">
-                <motion.a
-                    initial={{opacity: 0, y: 12}}
-                    whileInView={{opacity: 1, y: 0}}
-                    viewport={{once: true, margin: "-15px"}}
-                    transition={{duration: 0.6}}
+                <Link
                     className="flex gap-2 border border-white/50 hover:border-yellow-300/50 text-sm px-3 py-1.5 rounded-xl tracking-widset text-neutral-300 hover:text-white bg-white/5 hover:bg-white/10 transition-colors"
-                    href="/all-projects"
+                    to="/all-projects"
                     rel="noreferrer"
                 >
                     <span>
                         View More
                     </span>
                     <ChevronRight className="w-5 h-5 text-yellow-300"/>
-                </motion.a>
+                </Link>
                 </div>
             </div>
             { selected && <ProjectsModal project={selected} onClose={closeModal}/> }
